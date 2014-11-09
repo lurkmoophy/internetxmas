@@ -1,3 +1,39 @@
+/***********************************
+
+    NOTES
+
+     - TYPOGRAPHY:
+        Base font-size (body) is 18px.
+        All other fonts are set based on this and according to
+        the 'Perfect Fourth' Typographic Scale
+
+***********************************/
 body {
   background-color: #EAD7B9;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 3.157em;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+h2 {
+  font-size: 2.369em; }
+
+h3 {
+  font-size: 1.777em; }
+
+h4 {
+  font-size: 1.333em; }
+
+h5 {
+  font-size: 1em; }
+
+footer {
+  font-size: 0.75em;
+  text-transform: uppercase; }
