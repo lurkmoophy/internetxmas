@@ -15,6 +15,16 @@ body {
   font-weight: 400;
   text-transform: uppercase; }
 
+.main_column {
+  width: 70%;
+  float: left; }
+
+.secondary_column {
+  width: 30%;
+  float: left; }
+  .secondary_column img {
+    width: 100%; }
+
 h1 {
   font-size: 3.157em;
   font-family: 'PT Sans', sans-serif;
@@ -36,4 +46,5 @@ h5 {
 
 footer {
   font-size: 0.75em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  clear: both; }
