@@ -15,22 +15,34 @@ body {
   font-weight: 400;
   text-transform: uppercase; }
 
+.wrapper {
+  margin: 100px 80px 0 80px; }
+  .wrapper p {
+    width: 400px;
+    color: #DC7E65;
+    line-height: 1.5; }
+
+main {
+  overflow: hidden; }
+
 .main_column {
-  width: 70%;
+  padding-top: 30px;
+  width: 60%;
   float: left; }
 
 .secondary_column {
-  width: 30%;
+  width: 40%;
   float: left; }
-  .secondary_column img {
-    width: 100%; }
 
 h1 {
+  color: #341410;
   font-size: 3.157em;
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin-bottom: 15px; }
 
 h2 {
   font-size: 2.369em; }
@@ -44,7 +56,25 @@ h4 {
 h5 {
   font-size: 1em; }
 
+input[type="email"] {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #705C5D;
+  color: #705C5D;
+  width: 250px;
+  outline: none; }
+
 footer {
+  clear: both;
+  margin: 100px 0 20px 0;
+  color: #DC7E65;
   font-size: 0.75em;
-  text-transform: uppercase;
-  clear: both; }
+  text-align: center;
+  text-transform: uppercase; }
+
+footer a {
+  color: #A94428;
+  text-decoration: none;
+  border-bottom: 1px solid #A94428; }
+  footer a:hover, footer a:focus {
+    border-bottom: 2px solid #A94428; }
