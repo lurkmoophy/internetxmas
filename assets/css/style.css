@@ -26,26 +26,19 @@ body {
   text-transform: uppercase; }
 
 .wrapper {
-  margin: 100px 80px 0 80px; }
+  margin-top: 7em; }
   .wrapper p {
     width: 400px;
     color: #DB765E;
     line-height: 1.5; }
 
 main {
-  overflow: hidden; }
-
-.main_column {
-  padding-top: 30px;
-  width: 60%;
-  float: left; }
-
-.secondary_column {
-  width: 40%;
-  float: left;
-  text-align: center; }
-  .secondary_column img {
-    width: 100%; }
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  background-image: url("../img/internet-bauble_360.png");
+  background-repeat: no-repeat;
+  background-position: right; }
 
 h1 {
   color: #341410;
@@ -76,7 +69,6 @@ input[type="email"] {
   outline: none; }
 
 footer {
-  clear: both;
   margin: 100px 0 20px 0;
   color: #DB765E;
   font-size: 0.75em;
