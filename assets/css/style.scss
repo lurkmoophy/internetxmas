@@ -34,10 +34,10 @@ body {
 }
 
 .wrapper {
-    margin-top: 7em;
+    margin-top: 6.5em;
 
     p {
-        width: 400px;
+        width: 40%;
         color: $body;
         line-height: 1.5;
     }
@@ -61,7 +61,7 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.2;
-    margin-bottom: 15px;
+    margin-bottom: 3%;
 
 }
 
@@ -79,6 +79,10 @@ h4 {
 
 h5 {
     font-size: 1em;
+}
+
+form {
+    margin-top: 3%;
 }
 
 input[type="email"] {
@@ -107,4 +111,88 @@ footer a {
     &:hover, &:focus {
         border-bottom: 2px solid $links;
     }
+}
+
+/***********************************
+
+    MEDIA QUERIES:
+    BACKGROUND IMAGE
+    PARAGRAPH LENGTH
+    FONT SIZES
+    1300px 780px
+
+***********************************/
+
+/* Screens 1300px and above *******/
+@media only screen and (min-width:81.25em) {
+	.wrapper p {
+        width: 35%;
+    }
+}
+
+/* iPads (landscape) **************/
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    .wrapper p {
+        width: 50%;
+    }
+}
+
+/* iPads (portrait) ***************/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+    .wrapper p {
+        width: 65%;
+    }
+
+    main {
+        background-size: 30%;
+    }
+
+    h1 {
+        font-size: 2.369em;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+    body {
+        font-size: 1em;
+    }
+
+    .wrapper {
+        margin-top: 3em;
+
+        p {
+            width: 85%;
+        }
+    }
+
+    main {
+        padding-bottom: 20em;
+        background-position: center bottom;
+        background-size: 62%;
+    }
+
+    h1 {
+        font-size: 1.777em;
+    }
+
+    form {
+        margin-top: 8%;
+    }
+
+    footer {
+        margin-top: 3em;
+    }
+
 }
