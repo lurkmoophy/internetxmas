@@ -28,15 +28,15 @@ body {
 .wrapper {
   margin-top: 6.5em; }
   .wrapper p {
-    width: 40%;
+    width: 45%;
     color: #DB765E;
     line-height: 1.5; }
 
 main {
   width: 90%;
-  max-width: 1300px;
+  max-width: 1090px;
   margin: 0 auto;
-  background-image: url("/assets/img/internet-bauble_360.png");
+  background-image: url("../img/internet-bauble_360.png");
   background-repeat: no-repeat;
   background-position: right; }
 
@@ -97,13 +97,46 @@ footer a {
 /* Screens 1300px and above *******/
 @media only screen and (min-width: 81.25em) {
   .wrapper p {
-    width: 35%; } }
+    width: 45%; } }
+/* Screens 920px and below *******/
+@media only screen and (max-width: 57.5em) {
+  .wrapper p {
+    width: 65%; }
+
+  main {
+    background-size: 30%; }
+
+  h1 {
+    font-size: 2.369em; } }
+/* Screens 668px and below *******/
+@media only screen and (max-width: 43em) {
+  body {
+    font-size: 1em; }
+
+  .wrapper {
+    margin-top: 3em; }
+    .wrapper p {
+      width: 75%; }
+
+  main {
+    padding-bottom: 15em;
+    background-position: center bottom;
+    background-size: 30%; }
+
+  h1 {
+    font-size: 1.777em; }
+
+  form {
+    margin-top: 8%; }
+
+  footer {
+    margin-top: 3em; } }
 /* iPads (landscape) **************/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .wrapper p {
     width: 50%; } }
 /* iPads (portrait) ***************/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .wrapper p {
     width: 65%; }
 
@@ -113,7 +146,7 @@ footer a {
   h1 {
     font-size: 2.369em; } }
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
     font-size: 1em; }
 
@@ -125,7 +158,7 @@ footer a {
   main {
     padding-bottom: 20em;
     background-position: center bottom;
-    background-size: 62%; }
+    background-size: 50%; }
 
   h1 {
     font-size: 1.777em; }
