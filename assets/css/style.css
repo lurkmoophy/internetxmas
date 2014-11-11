@@ -68,11 +68,14 @@ input[type="email"] {
   border: none;
   border-bottom: 2px solid #705C5D;
   color: #705C5D;
-  width: 250px;
+  width: 300px;
   outline: none; }
 
+input[type="submit"] {
+  display: none; }
+
 footer {
-  margin: 100px 0 20px 0;
+  margin: 8em 0 2em 0;
   color: #DB765E;
   font-size: 0.75em;
   text-align: center;
@@ -107,7 +110,17 @@ footer a {
     background-size: 30%; }
 
   h1 {
-    font-size: 2.369em; } }
+    font-size: 2.369em; }
+
+  input[type="submit"] {
+    display: inline;
+    width: 8em;
+    margin-top: 2em;
+    padding: 0.5em;
+    text-transform: uppercase;
+    background: none;
+    color: #705C5D;
+    border: 2px solid #705C5D; } }
 /* Screens 668px and below *******/
 @media only screen and (max-width: 43em) {
   body {
@@ -116,10 +129,11 @@ footer a {
   .wrapper {
     margin-top: 3em; }
     .wrapper p {
-      width: 75%; }
+      width: 100%; }
 
   main {
-    padding-bottom: 15em;
+    text-align: center;
+    padding-bottom: 18em;
     background-position: center bottom;
     background-size: 30%; }
 
@@ -129,12 +143,32 @@ footer a {
   form {
     margin-top: 8%; }
 
+  input[type="submit"] {
+    display: inline;
+    width: 8em;
+    margin-top: 2em;
+    padding: 0.5em;
+    text-transform: uppercase;
+    background: none;
+    color: #705C5D;
+    border: 2px solid #705C5D; }
+
   footer {
     margin-top: 3em; } }
 /* iPads (landscape) **************/
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .wrapper p {
-    width: 50%; } }
+    width: 50%; }
+
+  input[type="submit"] {
+    display: inline;
+    width: 8em;
+    margin-top: 2em;
+    padding: 0.5em;
+    text-transform: uppercase;
+    background: none;
+    color: #705C5D;
+    border: 2px solid #705C5D; } }
 /* iPads (portrait) ***************/
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .wrapper p {
@@ -144,7 +178,17 @@ footer a {
     background-size: 30%; }
 
   h1 {
-    font-size: 2.369em; } }
+    font-size: 2.369em; }
+
+  input[type="submit"] {
+    display: inline;
+    width: 8em;
+    margin-top: 2em;
+    padding: 0.5em;
+    text-transform: uppercase;
+    background: none;
+    color: #705C5D;
+    border: 2px solid #705C5D; } }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
@@ -153,18 +197,29 @@ footer a {
   .wrapper {
     margin-top: 3em; }
     .wrapper p {
-      width: 85%; }
+      width: 100%; }
 
   main {
     padding-bottom: 20em;
     background-position: center bottom;
-    background-size: 50%; }
+    background-size: 50%;
+    text-align: center; }
 
   h1 {
     font-size: 1.777em; }
 
   form {
-    margin-top: 8%; }
+    margin-top: 2em; }
+
+  input[type="submit"] {
+    display: inline;
+    width: 8em;
+    margin-top: 2em;
+    padding: 0.5em;
+    text-transform: uppercase;
+    background: none;
+    color: #705C5D;
+    border: 2px solid #705C5D; }
 
   footer {
     margin-top: 3em; } }
