@@ -179,6 +179,9 @@ footer a {
   h1 {
     font-size: 2.369em; }
 
+  input[type="email"] {
+    width: 275px; }
+
   input[type="submit"] {
     display: inline;
     width: 8em;
