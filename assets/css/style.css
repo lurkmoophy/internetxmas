@@ -18,27 +18,48 @@
     MAIN STYLING
 
 ***********************************/
+
+.droppin-baubles {
+  -webkit-animation: bounceInDown;
+          animation: bounceInDown;
+}
+
+.swingin-baubles {
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-animation: swingin infinite ease-in-out alternate;
+            animation: swingin infinite ease-in-out alternate;
+}
+
+.no-animation {
+  -webkit-animation: none;
+          animation: none;
+}
 body {
   background-color: #E8D2B1;
-  font-size: 1.2em;
+  font-size: 18px;
   font-family: 'museo-sans', Helvetica, Arial, sans-serif;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background-image: url(../img/baubles-background.png);
+  background-repeat: repeat-x; 
+color: #DB765E;
+line-height: 1.4;}
 
 .wrapper {
   margin-top: 6.5em; }
   .wrapper p {
-    width: 45%;
-    color: #DB765E;
-    line-height: 1.5; }
+    width: 45%; }
 
-main {
+header {
   width: 90%;
   max-width: 1090px;
   margin: 0 auto;
-  background-image: url("../img/internet-bauble_360.png");
-  background-repeat: no-repeat;
-  background-position: right; }
+ }
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+}
 
 h1 {
   color: #341410;
@@ -74,13 +95,16 @@ input[type="submit"] {
   display: none; }
 
 footer {
-  margin: 8em 0 2em 0;
-  color: #DB765E;
+  position: relative;
+  background: #341410;
+  color: #FBF1EF;
+  height: 3em;
+  padding-top: 2em;
   font-size: 0.75em;
   text-align: center;
   text-transform: uppercase; }
 
-footer a {
+a {
   color: #A94327;
   text-decoration: none;
   border-bottom: 1px solid #A94327; }
@@ -225,3 +249,366 @@ footer a {
 
   footer {
     margin-top: 3em; } }
+
+/* ==================== The Tickets Screen ====================== */
+
+.the-bauble {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  background: url(../img/bauble-main.png);
+  width: 213px;
+  height: 334px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+  @media screen and (max-width: 770px ) {
+      .the-bauble {
+        display: none;
+      }
+    }
+
+  .the-bauble:active {
+    -webkit-animation-play-state: paused;
+  }
+
+.tito-ticket-list {
+  border: 2px solid #DB765E;
+  border-radius: 5px;
+  padding: 0;
+  background: #EEDBC0;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 20em;
+}
+
+.tito-ticket-list li {
+  color: #DB765E;
+  padding: 20px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+ .tito-ticket-price, .tito-ticket-quantity  {
+  display: inline-block;
+}
+
+.tito-ticket-name-wrapper {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.tito-ticket-price-quantity-wrapper input {
+  background: rgba( 255, 255, 255, 0.4 );
+  border: 2px solid #DB765E;
+  border-radius: 5px;
+  width: 5em;
+  padding: 3px 7px;
+}
+
+.tito-submit {
+  background: #549060;
+  border: 2px solid #FBF1EF;
+  border-radius: 5px;
+  padding: 7px 0;
+  width: 90%;
+  max-width: 20em;
+  margin: 0.5em auto;
+  display: block;
+  color: #FBF1EF;
+  transition: 0.1s ease-in;
+}
+
+  .tito-submit:hover {
+    background: rgba( 255, 255, 255, 0.7);
+    border: 2px solid #549060;
+    color: #549060;
+  }
+
+.tito-badge-link {
+  display: none;
+  width: 100%;
+  text-align: center;
+  font-size: small;
+}
+
+#the-top {
+  position: relative;
+  z-index: 2;
+}
+
+.red-bg {
+  background: #DB765E;
+  color: #FBF1EF;
+  width: 100%;
+  overflow: visible;
+  position: relative;
+}
+
+section {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+#about {
+  z-index: 1;
+  margin-top: -160px;
+  padding-top: 100px;
+}
+
+.section-text {
+  width: 50%;
+  max-width: 33em;
+  margin: 0 auto;
+}
+  .section-text p {
+    width: 100%;
+    text-transform: none;
+  }
+
+#venue {
+  background: url(../img/the-shoreditch-small.jpg) no-repeat;
+  background-size: cover;
+  
+}
+
+@media screen and (min-width: 600px) {
+  #venue {
+    background-image: url(../img/the-shoreditch-medium.jpg) no-repeat;
+
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #venue {
+    background-image: url(../img/the-shoreditch-large.jpg) no-repeat;
+
+  }
+}
+
+.sponsors-list {
+  padding: 0;
+  max-width: 33em;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sponsors-list li {
+  list-style-type: none;
+  display: inline-block;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sponsors-list li a {
+  text-decoration: none;
+  border: none;
+}
+
+.sponsors-list li a:hover {
+  opacity: 0.8;
+}
+  
+
+.spiky-top {
+  width: 100%;
+  height: 4px;
+  background: url(../img/spiky-top.png) repeat-x;
+  position: absolute;
+  top:-4px;
+}
+
+.spiky-bottom {
+  width: 100%;
+  height: 4px;
+  background: url(../img/spiky-bottom.png) repeat-x;
+  position: absolute;
+  bottom:-4px;
+}
+
+.spiky-top-inverted {
+  background:url(../img/spiky-top-inverted.png) repeat-x;
+  top: 0;
+}
+
+.spiky-bottom-inverted {
+  background:url(../img/spiky-bottom-inverted.png) repeat-x;
+  bottom: 0;
+}
+
+/* Baubles */
+
+.baubles-container {
+  position: absolute;
+  top: -4px;
+  left: 30px;
+  height: 336px;
+  width: 360px;
+  overflow: hidden;
+}
+
+.about-baubles {
+  top: -15px;
+  position: absolute;
+  display: none;
+
+}
+
+
+
+.macbook {
+  background: url(../img/bauble-macbook.png) no-repeat;
+  width: 120px;
+  height: 196px;
+  left: 70px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.xbox {
+  background: url(../img/bauble-xbox.png) no-repeat;
+  width: 120px;
+  height: 298px;
+  left: 150px;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
+.overdue {
+  background: url(../img/bauble-overdue.png) no-repeat;
+  width: 120px;
+  height: 336px;
+  left: 0;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+
+}
+
+.slippers-bauble {
+  position: absolute;
+  top: 0;
+  background: url(../img/bauble-slippers.png) no-repeat;
+  width: 213px;
+  height: 334px;
+  right: 20px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+/* media queries */
+
+
+@media screen and (max-width: 1250px) {
+    .section-text {
+      margin-left: 50px;
+    }
+
+    .red-bg .section-text {
+      margin-left: 370px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 720px) {
+    .about-baubles, .slippers-bauble {
+      display: none;
+    }
+    .red-bg .section-text, .section-text {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+/* ==================== Animations ====================== */
+
+@-webkit-keyframes swingin {
+  from {
+    -webkit-transform: rotate3d(0, 0, 1, 10deg);
+            transform: rotate3d(0, 0, 1, 10deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+            transform: rotate3d(0, 0, 1, -10deg);
+  }
+}@keyframes swingin {
+  from {
+    -webkit-transform: rotate3d(0, 0, 1, 10deg);
+            transform: rotate3d(0, 0, 1, 10deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+            transform: rotate3d(0, 0, 1, -10deg);
+  }
+}
+
+@-webkit-keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+            transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 15px, 0);
+            transform: translate3d(0, 15px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}@keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+            transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+            transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
