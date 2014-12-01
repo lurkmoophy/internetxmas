@@ -505,24 +505,44 @@ section {
 
 
 @media screen and (max-width: 1250px) {
+
     .section-text {
       margin-left: 50px;
+      display: inline-block;
+      vertical-align: top;
     }
 
     .red-bg .section-text {
       margin-left: 370px;
     }
 
+    .sponsors-list {
+      text-align: center;
+      width: 35%;
+      margin-left: 5%;
+      display: inline-block;
+      margin-top: 40px;
+    }
+
 
   }
 
   @media screen and (max-width: 720px) {
+    
     .about-baubles, .slippers-bauble {
       display: none;
     }
     .red-bg .section-text, .section-text {
       width: 90%;
       margin: 0 auto;
+    }
+
+    .sponsors-list {
+      text-align: center;
+      width: 90%;
+      margin: 1em auto;
+      display: inline-block;
+      margin-top: 40px;
     }
   }
 
