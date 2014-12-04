@@ -232,8 +232,9 @@ a {
 
 
 .fine-print {
-  margin-top: 2em !important;
+  margin-top: 4em !important;
   font-size: 0.7em;
+  margin-bottom: 5em !important;
 }
 
 
